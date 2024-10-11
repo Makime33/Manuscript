@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.16)  10 OCT 2024 17:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.16)  11 OCT 2024 15:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -637,36 +637,36 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.116 \tableofcontents
-                       [1
+l.110 \chapter
+              *{Préface} [1]
+pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.117 \tableofcontents
+                       [2
 
 ] (./theseGUILLOT.toc)
 \tf@toc=\write4
 \openout4 = `theseGUILLOT.toc'.
 
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.117 \newpage
-               [2
+ [3
 
 ]
 Chapter 1.
-Package newfloat Info: Setting Plan B file extension to `lof'... on input line 122.
-[3
+Package newfloat Info: Setting Plan B file extension to `lof'... on input line 123.
+[4
 
 ]
 Chapter 2.
-(./Chap1/keskispass.tex [4
+(./Chap1/keskispass.tex [5
 
-]) [5]
+]) [6]
 Chapter 3.
-[6
+[7
 
 ]
 Chapter 4.
-(./4emeDeCouverture.tex [7
+(./4emeDeCouverture.tex [8
 
 ]
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
@@ -682,18 +682,18 @@ Package rerunfilecheck Info: File `theseGUILLOT.out' has not changed.
 (rerunfilecheck)             Checksum: 1F0BC9F84FDD6DFE2FECBFDA5FB9C060;567.
  ) 
 Here is how much of TeX's memory you used:
- 14010 strings out of 474104
- 224347 string characters out of 5747502
+ 14011 strings out of 474104
+ 224353 string characters out of 5747502
  1932496 words of memory out of 5000000
  36120 multiletter control sequences out of 15000+600000
  602814 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  79i,7n,93p,368b,588s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri12.pfb>
-Output written on theseGUILLOT.pdf (10 pages, 112679 bytes).
+Output written on theseGUILLOT.pdf (11 pages, 113427 bytes).
 PDF statistics:
- 102 PDF objects out of 1000 (max. 8388607)
- 80 compressed objects within 1 object stream
- 14 named destinations out of 1000 (max. 500000)
+ 106 PDF objects out of 1000 (max. 8388607)
+ 83 compressed objects within 1 object stream
+ 15 named destinations out of 1000 (max. 500000)
  46 words of extra memory for PDF output out of 10000 (max. 10000000)
 
