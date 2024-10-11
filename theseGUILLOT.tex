@@ -1,0 +1,160 @@
+\documentclass[12pt,a4paper]{report}
+
+% #region Packages
+\renewcommand{\rmdefault}{phv}	% Utilise la police Arial pour le texte
+\usepackage[T1]{fontenc}		% Encodage de la police pour une meilleure gestion des caractères spéciaux
+\usepackage[utf8]{inputenc}		% Encodage UTF-8 pour permettre l'utilisation de caractères non-ASCII
+\usepackage{lmodern}			% Utilise une version améliorée des polices LaTeX standard
+\usepackage{graphicx}			% Permet d'insérer des images dans le document
+\usepackage{multicol}			% Gère le texte en colonnes multiples
+\usepackage{lipsum}				% Génère du texte factice (Lorem Ipsum)
+\usepackage{float}				% Améliore le placement des objets flottants (comme les figures et tableaux)
+\usepackage{vwcol}				% Permet de créer des colonnes avec des largeurs variables
+\usepackage{geometry}			% Permet de définir les marges et la mise en page
+\usepackage{caption}			% Personnalise les légendes des figures et tableaux
+\usepackage{framed}				% Encadre des portions de texte
+\usepackage{pdflscape}			% Permet d'inclure des pages en mode paysage dans un PDF
+\usepackage{eurosym}			% Ajoute le symbole de l'euro (€)
+\usepackage{xcolor}				% Gestion avancée des couleurs dans le document
+\usepackage{amsmath,amssymb}	% Fournit des symboles et des outils avancés pour les mathématiques
+\usepackage{hyperref}			% Ajoute des liens hypertextes cliquables dans le PDF
+\usepackage{setspace}			% Gère l'espacement entre les lignes
+
+% #endregion
+
+% #region Déclaration des couleurs
+\definecolor{tabblue}{RGB}{31,119,180}
+\definecolor{taborange}{RGB}{255,127,14}
+\definecolor{tabgreen}{RGB}{44,160,44}
+\definecolor{tabred}{RGB}{214,39,40}
+\definecolor{tabpurple}{RGB}{148,103,189}
+\definecolor{tabbrown}{RGB}{140,86,75}
+\definecolor{tabpink}{RGB}{227,119,194}
+\definecolor{tabgray}{RGB}{127,127,127}
+\definecolor{tabolive}{RGB}{188,189,34}
+\definecolor{tabcyan}{RGB}{23,190,207}
+\definecolor{rosePW}{RGB}{219,164,207}
+\definecolor{orangeNW}{RGB}{245,121,0}
+% #endregion
+
+\geometry{a4paper, left=25mm, right=25mm, top=25mm, bottom=25mm}
+\DeclareCaptionType{annexe}
+
+
+% Espacement entre les lignes
+\onehalfspacing
+
+
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=black,
+    urlcolor=black,
+    % bookmarks=true,
+    bookmarksopen=true,
+    bookmarksopenlevel=2,
+    pdftitle={Manuscrit de thèse de Maxime Guillot},
+    pdfauthor={Maxime Guillot},
+}
+
+% Set up section numbering
+\setcounter{secnumdepth}{4}
+
+
+\usepackage{titlesec}
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}
+{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+
+
+% #region Déclaration des "Mets une source"
+\usepackage{etoolbox}
+\BeforeBeginEnvironment{metsUneSource}{\colorlet{oldcolor}{.}}
+\AfterEndEnvironment{metsUneSource}{\color{oldcolor}}
+
+\newenvironment{metsUneSource}
+{\begin{framed}\color{red}}
+{\end{framed}}
+% #endregion
+
+% % Création de l'environnement 'spaced' avec interligne doublé
+% \newenvironment{spaced}
+%     {\begin{spacing}{2}} % Interligne doublé
+%     {\end{spacing}}
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Une ligne horizontale de la largeur de la page
+
+
+
+
+
+
+
+
+\begin{document}
+% ----------------------------- %
+%          Document principal    %
+% ----------------------------- %
+
+% Inclusion de la première de couverture
+\input{couverture}
+
+
+% ----------------------------- %
+%          Préface               %
+% ----------------------------- %
+\chapter*{Préface}
+\addcontentsline{toc}{chapter}{Préface}  % Ajout au sommaire
+% Écrire la préface ici
+
+% ----------------------------- %
+%        Table des matières      %
+% ----------------------------- %
+\tableofcontents
+\newpage
+
+% ----------------------------- %
+%      Chapitre d'introduction   %
+% ----------------------------- %
+\chapter{Introduction}
+% Écrire l'introduction ici
+ 
+
+% ----------------------------- %
+%        Chapitre 1              %
+% ----------------------------- %
+\chapter{Titre du Chapitre 1}
+% Inclure un fichier séparé pour chaque chapitre
+% \input{chapitre1}
+\input{Chap1/keskispass}
+
+% ----------------------------- %
+%        Chapitre 2              %
+% ----------------------------- %
+\chapter{Titre du Chapitre 2}
+% Inclure un fichier séparé pour chaque chapitre
+% \input{chapitre2}
+
+% ----------------------------- %
+%       Conclusion               %
+% ----------------------------- %
+\chapter{Conclusion}
+% Écrire la conclusion ici
+
+% ----------------------------- %
+%      Bibliographie             %
+% ----------------------------- %
+% \addcontentsline{toc}{chapter}{Bibliographie}
+% \bibliographystyle{plain}  % Style de la bibliographie
+% \bibliography{bibliographie}  % Fichier .bib
+
+% \bibliographystyle{IEEEtran}
+% \bibliography{MaBibliographie}
+
+
+\input{4emeDeCouverture}
+
+\end{document}

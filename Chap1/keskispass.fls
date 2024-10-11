@@ -1,0 +1,16 @@
+PWD c:/Users/maguillot/APartager/LaFac/Thèse/Manuscript/Chap1
+INPUT c:/texlive/2024/texmf.cnf
+INPUT c:/texlive/2024/texmf-dist/web2c/texmf.cnf
+INPUT c:/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt
+INPUT c:/Users/maguillot/APartager/LaFac/Thèse/Manuscript/Chap1/keskispass.tex
+OUTPUT keskispass.log
+INPUT c:/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+INPUT c:/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+INPUT ./keskispass.aux
+INPUT ./keskispass.aux
+INPUT keskispass.aux
+OUTPUT keskispass.aux
+OUTPUT keskispass.pdf
+INPUT c:/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map
+INPUT keskispass.aux
+INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
