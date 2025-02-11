@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.16)  11 OCT 2024 16:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.16)  11 FEB 2025 09:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -511,7 +511,14 @@ Package: titlesec 2023/10/27 v2.16 Sectioning titles
 LaTeX Font Info:    Trying to load font information for T1+lmr on input line 97.
  (c:/texlive/2024/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) (./theseGUILLOT.aux)
+) (./theseGUILLOT.aux
+
+LaTeX Warning: Label `VtEnFonctionDeT' multiply defined.
+
+
+LaTeX Warning: Label `fig:CTAT_PTAT_insh' multiply defined.
+
+)
 \openout1 = `theseGUILLOT.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 97.
@@ -596,51 +603,56 @@ Package hyperref Info: Link coloring ON on input line 97.
 Package newfloat Info: Trying Plan B...
 Package newfloat Info: `float' package detected.
  (./couverture.tex
-<figures/universite_de_bordeaux.pdf, id=24, 301.125pt x 105.39375pt>
+<figures/universite_de_bordeaux.pdf, id=84, 301.125pt x 105.39375pt>
 File: figures/universite_de_bordeaux.pdf Graphic file (type pdf)
 <use figures/universite_de_bordeaux.pdf>
-Package pdftex.def Info: figures/universite_de_bordeaux.pdf  used on input line 4.
+Package pdftex.def Info: figures/universite_de_bordeaux.pdf  used on input line 5.
 (pdftex.def)             Requested size: 91.04742pt x 31.86601pt.
  [1
 
 {c:/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc} <./figures/universite_de_bordeaux.pdf>]
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 33.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 34.
  (c:/texlive/2024/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 33.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 34.
  (c:/texlive/2024/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 33.
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 34.
  (c:/texlive/2024/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 33.
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 34.
  (c:/texlive/2024/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 33.
+(Font)              <12> on input line 34.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 33.
+(Font)              <8> on input line 34.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 33.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 33.
+(Font)              <6> on input line 34.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 34.
  (c:/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 33.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 34.
  (c:/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [2])
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.117 \tableofcontents
+l.127 \tableofcontents
                        [1
 
-] (./theseGUILLOT.toc)
+] (./theseGUILLOT.toc
+Overfull \hbox (3.91837pt too wide) in paragraph at lines 10--10
+ [][] [][][]\T1/lmr/m/n/12 Choix d'une tech-nolo-gie poly-va-lente avec des am-bi-tions de ro-bustesse 
+ []
+
+)
 \tf@toc=\write4
 \openout4 = `theseGUILLOT.toc'.
 
@@ -648,25 +660,191 @@ l.117 \tableofcontents
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.118 \newpage
+l.128 \newpage
                [2
+
+] [3
 
 ]
 Chapter 1.
-Package newfloat Info: Setting Plan B file extension to `lof'... on input line 123.
-[3
-
-]
-Chapter 2.
+Package newfloat Info: Setting Plan B file extension to `lof'... on input line 140.
 (./Chap1/keskispass.tex [4
 
-]) [5]
-Chapter 3.
-[6
+]
+<figures/FabBulkVsFdsoi.pdf, id=136, 1158.3275pt x 355.3275pt>
+File: figures/FabBulkVsFdsoi.pdf Graphic file (type pdf)
+<use figures/FabBulkVsFdsoi.pdf>
+Package pdftex.def Info: figures/FabBulkVsFdsoi.pdf  used on input line 26.
+(pdftex.def)             Requested size: 318.66948pt x 97.7506pt.
+ [5] [6 <./figures/FabBulkVsFdsoi.pdf>] [7]
+<figures/DoseRateExemple.pdf, id=154, 818.86407pt x 331.31433pt>
+File: figures/DoseRateExemple.pdf Graphic file (type pdf)
+<use figures/DoseRateExemple.pdf>
+Package pdftex.def Info: figures/DoseRateExemple.pdf  used on input line 98.
+(pdftex.def)             Requested size: 318.66948pt x 128.934pt.
+ [8 <./figures/DoseRateExemple.pdf>]
+<figures/SOIvsBULK.pdf, id=164, 1006.40941pt x 423.76636pt>
+File: figures/SOIvsBULK.pdf Graphic file (type pdf)
+<use figures/SOIvsBULK.pdf>
+Package pdftex.def Info: figures/SOIvsBULK.pdf  used on input line 144.
+(pdftex.def)             Requested size: 409.71692pt x 172.51675pt.
+ [9]
+<figures/Vt(Vbb).pdf, id=169, 276.0666pt x 218.50659pt>
+File: figures/Vt(Vbb).pdf Graphic file (type pdf)
+<use figures/Vt(Vbb).pdf>
+Package pdftex.def Info: figures/Vt(Vbb).pdf  used on input line 157.
+(pdftex.def)             Requested size: 227.62206pt x 180.16345pt.
+ [10 <./figures/SOIvsBULK.pdf> <./figures/Vt(Vbb).pdf
+
+pdfTeX warning: pdflatex.exe (file ./figures/Vt(Vbb).pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>]
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 184.
+ (c:/texlive/2024/texmf-dist/tex/latex/lm/ts1lmr.fd
+File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)) [11{c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}]
+Chapter 2.
+(./Chap2/diode_antenna.tex
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 2.
+
+[12
 
 ]
+<figures/FabSOI-MiddleEND-2.pdf, id=193, 563.52544pt x 247.90283pt>
+File: figures/FabSOI-MiddleEND-2.pdf Graphic file (type pdf)
+<use figures/FabSOI-MiddleEND-2.pdf>
+Package pdftex.def Info: figures/FabSOI-MiddleEND-2.pdf  used on input line 47.
+(pdftex.def)             Requested size: 318.66948pt x 140.19017pt.
+<figures/FabSOI-MiddleEND-3.5.pdf, id=194, 563.52556pt x 309.36783pt>
+File: figures/FabSOI-MiddleEND-3.5.pdf Graphic file (type pdf)
+<use figures/FabSOI-MiddleEND-3.5.pdf>
+Package pdftex.def Info: figures/FabSOI-MiddleEND-3.5.pdf  used on input line 54.
+(pdftex.def)             Requested size: 318.66948pt x 174.94891pt.
+ [13{c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc} <./figures/FabSOI-MiddleEND-2.pdf>]
+<figures/FabSOI-MiddleEND-4.pdf, id=211, 563.52556pt x 247.90283pt>
+File: figures/FabSOI-MiddleEND-4.pdf Graphic file (type pdf)
+<use figures/FabSOI-MiddleEND-4.pdf>
+Package pdftex.def Info: figures/FabSOI-MiddleEND-4.pdf  used on input line 62.
+(pdftex.def)             Requested size: 318.66948pt x 140.19017pt.
+ [14 <./figures/FabSOI-MiddleEND-3.5.pdf> <./figures/FabSOI-MiddleEND-4.pdf
+
+pdfTeX warning: pdflatex.exe (file ./figures/FabSOI-MiddleEND-4.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>] [15]
+<figures/BridgingBon.pdf, id=229, 142.5325pt x 31.11626pt>
+File: figures/BridgingBon.pdf Graphic file (type pdf)
+<use figures/BridgingBon.pdf>
+Package pdftex.def Info: figures/BridgingBon.pdf  used on input line 104.
+(pdftex.def)             Requested size: 318.66948pt x 69.56885pt.
+<figures/BridgingPAD.pdf, id=230, 232.87pt x 71.26625pt>
+File: figures/BridgingPAD.pdf Graphic file (type pdf)
+<use figures/BridgingPAD.pdf>
+Package pdftex.def Info: figures/BridgingPAD.pdf  used on input line 114.
+(pdftex.def)             Requested size: 318.66948pt x 97.53409pt.
+ [16 <./figures/BridgingBon.pdf> <./figures/BridgingPAD.pdf
+
+pdfTeX warning: pdflatex.exe (file ./figures/BridgingPAD.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>]) (./Chap2/laFDSOI.tex
+<../Conf/ICECS2024/ICECS_Voltage_Reference/figures/LVT-NMOS.pdf, id=244, 401.08328pt x 277.44565pt>
+File: ../Conf/ICECS2024/ICECS_Voltage_Reference/figures/LVT-NMOS.pdf Graphic file (type pdf)
+<use ../Conf/ICECS2024/ICECS_Voltage_Reference/figures/LVT-NMOS.pdf>
+Package pdftex.def Info: ../Conf/ICECS2024/ICECS_Voltage_Reference/figures/LVT-NMOS.pdf  used on input line 13.
+(pdftex.def)             Requested size: 364.19667pt x 251.93828pt.
+
+
+LaTeX Warning: Citation `cathelin_fully_2017' on page 17 undefined on input line 14.
+
+
+LaTeX Warning: Citation `cathelin_fully_2017' on page 17 undefined on input line 14.
+
+<../Conf/ICECS2024/ICECS_Voltage_Reference/figures/Vt(Vbb).pdf, id=245, 276.0666pt x 218.50659pt>
+File: ../Conf/ICECS2024/ICECS_Voltage_Reference/figures/Vt(Vbb).pdf Graphic file (type pdf)
+<use ../Conf/ICECS2024/ICECS_Voltage_Reference/figures/Vt(Vbb).pdf>
+Package pdftex.def Info: ../Conf/ICECS2024/ICECS_Voltage_Reference/figures/Vt(Vbb).pdf  used on input line 23.
+(pdftex.def)             Requested size: 318.66948pt x 252.22751pt.
+[17] [18 <../Conf/ICECS2024/ICECS_Voltage_Reference/figures/LVT-NMOS.pdf> <../Conf/ICECS2024/ICECS_Voltage_Reference/figures/Vt(Vbb).pdf
+
+pdfTeX warning: pdflatex.exe (file ../Conf/ICECS2024/ICECS_Voltage_Reference/figures/Vt(Vbb).pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>]) [19]
+Chapter 3.
+(./Chap3/run_janvier_2024.tex
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 1.
+
+<../Circuits/RunJanvier2024/Vref50mV.pdf, id=271, 332.24126pt x 515.9275pt>
+File: ../Circuits/RunJanvier2024/Vref50mV.pdf Graphic file (type pdf)
+<use ../Circuits/RunJanvier2024/Vref50mV.pdf>
+Package pdftex.def Info: ../Circuits/RunJanvier2024/Vref50mV.pdf  used on input line 32.
+(pdftex.def)             Requested size: 318.66948pt x 494.88329pt.
+<../ProjetConditionsExtremes/RapportRenouvellement/PDF/patronPCB.pdf, id=272, 597.50786pt x 845.04686pt>
+File: ../ProjetConditionsExtremes/RapportRenouvellement/PDF/patronPCB.pdf Graphic file (type pdf)
+<use ../ProjetConditionsExtremes/RapportRenouvellement/PDF/patronPCB.pdf>
+Package pdftex.def Info: ../ProjetConditionsExtremes/RapportRenouvellement/PDF/patronPCB.pdf  used on input line 49.
+(pdftex.def)             Requested size: 318.66948pt x 450.68367pt.
+<../Circuits/PCB_RunJanv2024/3D_PCB_chip.png, id=273, 554.82281pt x 545.78906pt>
+File: ../Circuits/PCB_RunJanv2024/3D_PCB_chip.png Graphic file (type png)
+<use ../Circuits/PCB_RunJanv2024/3D_PCB_chip.png>
+Package pdftex.def Info: ../Circuits/PCB_RunJanv2024/3D_PCB_chip.png  used on input line 56.
+(pdftex.def)             Requested size: 318.66948pt x 313.48482pt.
+<../ProjetConditionsExtremes/RapportRenouvellement/PDF/protectionESDsurPCB.pdf, id=275, 231.86626pt x 105.39375pt>
+File: ../ProjetConditionsExtremes/RapportRenouvellement/PDF/protectionESDsurPCB.pdf Graphic file (type pdf)
+<use ../ProjetConditionsExtremes/RapportRenouvellement/PDF/protectionESDsurPCB.pdf>
+Package pdftex.def Info: ../ProjetConditionsExtremes/RapportRenouvellement/PDF/protectionESDsurPCB.pdf  used on input line 68.
+(pdftex.def)             Requested size: 318.66948pt x 144.86296pt.
+<../Circuits/PCB_RunJanv2024/3D_PCB_alims.png, id=276, 688.07062pt x 359.84438pt>
+File: ../Circuits/PCB_RunJanv2024/3D_PCB_alims.png Graphic file (type png)
+<use ../Circuits/PCB_RunJanv2024/3D_PCB_alims.png>
+Package pdftex.def Info: ../Circuits/PCB_RunJanv2024/3D_PCB_alims.png  used on input line 75.
+(pdftex.def)             Requested size: 318.66948pt x 166.65602pt.
+<../ProjetConditionsExtremes/RapportRenouvellement/PDF/WireBonding_Impala_DIL_24.pdf, id=277, 2504.35625pt x 2767.33875pt>
+File: ../ProjetConditionsExtremes/RapportRenouvellement/PDF/WireBonding_Impala_DIL_24.pdf Graphic file (type pdf)
+<use ../ProjetConditionsExtremes/RapportRenouvellement/PDF/WireBonding_Impala_DIL_24.pdf>
+Package pdftex.def Info: ../ProjetConditionsExtremes/RapportRenouvellement/PDF/WireBonding_Impala_DIL_24.pdf  used on input line 82.
+(pdftex.def)             Requested size: 318.66948pt x 352.12373pt.
+<../ProjetConditionsExtremes/RapportRenouvellement/PNG/PhotoDIL24Buphagus/IMG_0691.JPG, id=278, 971.3088pt x 728.4816pt>
+File: ../ProjetConditionsExtremes/RapportRenouvellement/PNG/PhotoDIL24Buphagus/IMG_0691.JPG Graphic file (type jpg)
+<use ../ProjetConditionsExtremes/RapportRenouvellement/PNG/PhotoDIL24Buphagus/IMG_0691.JPG>
+Package pdftex.def Info: ../ProjetConditionsExtremes/RapportRenouvellement/PNG/PhotoDIL24Buphagus/IMG_0691.JPG  used on input line 89.
+(pdftex.def)             Requested size: 318.66948pt x 238.99908pt.
+) (./Chap3/run_octobre_2024.tex
+<../Conf/ICECS2024/ICECS_Voltage_Reference/figures/CTAT-PTAT.pdf, id=279, 285.91234pt x 291.07773pt>
+File: ../Conf/ICECS2024/ICECS_Voltage_Reference/figures/CTAT-PTAT.pdf Graphic file (type pdf)
+<use ../Conf/ICECS2024/ICECS_Voltage_Reference/figures/CTAT-PTAT.pdf>
+Package pdftex.def Info: ../Conf/ICECS2024/ICECS_Voltage_Reference/figures/CTAT-PTAT.pdf  used on input line 4.
+(pdftex.def)             Requested size: 182.09486pt x 185.38747pt.
+ [20
+
+] [21 <../Circuits/RunJanvier2024/Vref50mV.pdf>] [22 <../ProjetConditionsExtremes/RapportRenouvellement/PDF/patronPCB.pdf>] [23 <../Circuits/PCB_RunJanv2024/3D_PCB_chip.png> <../ProjetConditionsExtremes/RapportRenouvellement/PDF/protectionESDsurPCB.pdf>] [24 <../Circuits/PCB_RunJanv2024/3D_PCB_alims.png> <../ProjetConditionsExtremes/RapportRenouvellement/PDF/WireBonding_Impala_DIL_24.pdf>]
+<../Conf/ICECS2024/ICECS_Voltage_Reference/figures/PerfectCompensation.pdf, id=372, 276.14967pt x 219.87474pt>
+File: ../Conf/ICECS2024/ICECS_Voltage_Reference/figures/PerfectCompensation.pdf Graphic file (type pdf)
+<use ../Conf/ICECS2024/ICECS_Voltage_Reference/figures/PerfectCompensation.pdf>
+Package pdftex.def Info: ../Conf/ICECS2024/ICECS_Voltage_Reference/figures/PerfectCompensation.pdf  used on input line 10.
+(pdftex.def)             Requested size: 182.09486pt x 144.99028pt.
+<../Conf/ICECS2024/ICECS_Voltage_Reference/figures/PTATgeneration.pdf, id=373, 265.59477pt x 216.41972pt>
+File: ../Conf/ICECS2024/ICECS_Voltage_Reference/figures/PTATgeneration.pdf Graphic file (type pdf)
+<use ../Conf/ICECS2024/ICECS_Voltage_Reference/figures/PTATgeneration.pdf>
+Package pdftex.def Info: ../Conf/ICECS2024/ICECS_Voltage_Reference/figures/PTATgeneration.pdf  used on input line 16.
+(pdftex.def)             Requested size: 182.09486pt x 148.37871pt.
+<../Conf/ICECS2024/ICECS_Voltage_Reference/figures/StackedT180nm_With_measure.pdf, id=374, 225.05951pt x 349.31967pt>
+File: ../Conf/ICECS2024/ICECS_Voltage_Reference/figures/StackedT180nm_With_measure.pdf Graphic file (type pdf)
+<use ../Conf/ICECS2024/ICECS_Voltage_Reference/figures/StackedT180nm_With_measure.pdf>
+Package pdftex.def Info: ../Conf/ICECS2024/ICECS_Voltage_Reference/figures/StackedT180nm_With_measure.pdf  used on input line 22.
+(pdftex.def)             Requested size: 182.09486pt x 282.64355pt.
+<../Conf/ICECS2024/ICECS_Voltage_Reference/figures/Results.pdf, id=375, 276.55228pt x 219.8366pt>
+File: ../Conf/ICECS2024/ICECS_Voltage_Reference/figures/Results.pdf Graphic file (type pdf)
+<use ../Conf/ICECS2024/ICECS_Voltage_Reference/figures/Results.pdf>
+Package pdftex.def Info: ../Conf/ICECS2024/ICECS_Voltage_Reference/figures/Results.pdf  used on input line 28.
+(pdftex.def)             Requested size: 182.09486pt x 144.75044pt.
+) [25 <../ProjetConditionsExtremes/RapportRenouvellement/PNG/PhotoDIL24Buphagus/IMG_0691.JPG> <../Conf/ICECS2024/ICECS_Voltage_Reference/figures/CTAT-PTAT.pdf>] [26 <../Conf/ICECS2024/ICECS_Voltage_Reference/figures/PerfectCompensation.pdf> <../Conf/ICECS2024/ICECS_Voltage_Reference/figures/PTATgeneration.pdf
+
+pdfTeX warning: pdflatex.exe (file ../Conf/ICECS2024/ICECS_Voltage_Reference/figures/PTATgeneration.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <../Conf/ICECS2024/ICECS_Voltage_Reference/figures/StackedT180nm_With_measure.pdf
+
+pdfTeX warning: pdflatex.exe (file ../Conf/ICECS2024/ICECS_Voltage_Reference/figures/StackedT180nm_With_measure.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>] [27 <../Conf/ICECS2024/ICECS_Voltage_Reference/figures/Results.pdf>]
 Chapter 4.
-(./4emeDeCouverture.tex [7
+(./4emeDeCouverture.tex [28
 
 ]
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
@@ -678,22 +856,29 @@ l.16 \end{titlepage}
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-03-14>
  ***********
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `theseGUILLOT.out' has not changed.
-(rerunfilecheck)             Checksum: 1F0BC9F84FDD6DFE2FECBFDA5FB9C060;567.
+(rerunfilecheck)             Checksum: 8153A40C291603BEFAD14A6676DE83B9;4614.
  ) 
 Here is how much of TeX's memory you used:
- 14010 strings out of 474104
- 224347 string characters out of 5747502
- 1932496 words of memory out of 5000000
- 36120 multiletter control sequences out of 15000+600000
- 602814 words of font info for 64 fonts, out of 8000000 for 9000
+ 14391 strings out of 474104
+ 238101 string characters out of 5747502
+ 1935496 words of memory out of 5000000
+ 36403 multiletter control sequences out of 15000+600000
+ 616471 words of font info for 69 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 79i,7n,93p,368b,588s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri12.pfb>
-Output written on theseGUILLOT.pdf (10 pages, 112679 bytes).
+ 79i,8n,93p,1339b,582s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi6.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr6.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy10.pfb>
+Output written on theseGUILLOT.pdf (31 pages, 4557575 bytes).
 PDF statistics:
- 102 PDF objects out of 1000 (max. 8388607)
- 80 compressed objects within 1 object stream
- 14 named destinations out of 1000 (max. 500000)
- 46 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 497 PDF objects out of 1000 (max. 8388607)
+ 389 compressed objects within 4 object streams
+ 89 named destinations out of 1000 (max. 500000)
+ 281 words of extra memory for PDF output out of 10000 (max. 10000000)
 

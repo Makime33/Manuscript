@@ -1,5 +1,5 @@
 
-<!--  #region Plan -->
+<!--  #region  -->
 
 % \section*{Remerciements}
 
@@ -83,10 +83,11 @@
 
 
 
-Remerciment
+# Remerciment
 
 Abstract
 Résumé
+
 
 1 - keskispass dans l'espace, 
         dose
@@ -100,11 +101,16 @@ Résumé
                         SingleUppsetEvent
                         génération photocourant
 
+                jonction pn = générateur de courants
+                silicium = générateur de courants aussi mais les e-/h+ se régénérent plus simplement alors que dans les jpn ca fait un toboogan
+                        ELDRS = Enhanced Low Dose Rate Sensitivity => des courrants sont générés par les radiations dans le silicium mais sans les jonctions pn, mais les debits sont trop faibles pour considérer le debit de dose par rapport à la dose
+                        
+
 
 2 - Devenir robuste
         1 - avanguarde
                 choix techno
-                        28 FDSOI
+                        28 FDSOI vs bulk (dose et debit de dose)
                 choix design
                         theshold voltage low dependency
                 choix layout
@@ -127,6 +133,7 @@ Résumé
 
 3 - Mes circuits
         
+        Buphagus : pas perfomant mais design orienté vers la robustesse dose et debit de dose
         layout technics (T, LBTR, LBTR+T3)
         pas d'instance ESD
         Erreur gate antenna
@@ -135,6 +142,13 @@ Résumé
                 diodes
                         source
                 diode robuste aux radiations
+        PCB Buphagus
+                pas de diode
+                piste simple
+                PCB en forme de platine pour les radiations
+                capa de découplage et ESD
+                pas de capton ni de capa organique vous la mise sous vide
+ 
 
         Buphagus & Inshallah : Vref
                 state of the art
@@ -149,6 +163,7 @@ Résumé
         Inshallah : AOP supplie sensing de Justine Guedey, TCAS2
                 oscillateur
                 3 version de l'AOP
+                3 version de la reference de tension, design pas robuste, que le layout => creation d'une méthode de durcissement
 
         Global....
         Hiroshi...

@@ -104,12 +104,22 @@
 
 
 
+% % ----------------------------- %
+% %          Préface               %
+% % ----------------------------- %
+% \chapter*{Préface}
+% \addcontentsline{toc}{chapter}{Préface}  % Ajout au sommaire
+% % Écrire la préface ici
+%----------------------------- %
+%          Remerciement               %
 % ----------------------------- %
-%          Préface               %
-% ----------------------------- %
-\chapter*{Préface}
-\addcontentsline{toc}{chapter}{Préface}  % Ajout au sommaire
+\chapter*{Remerciements}
+\addcontentsline{toc}{chapter}{Remerciements}  % Ajout au sommaire
 % Écrire la préface ici
+
+%Mon amoureux, Antoine D 
+%Mon bébé, Marie P
+
 
 % ----------------------------- %
 %        Table des matières      %
@@ -120,14 +130,14 @@
 % ----------------------------- %
 %      Chapitre d'introduction   %
 % ----------------------------- %
-\chapter{Introduction}
+\chapter*{Introduction}
 % Écrire l'introduction ici
  
 
 % ----------------------------- %
 %        Chapitre 1              %
 % ----------------------------- %
-\chapter{Titre du Chapitre 1}
+\chapter{Effet des radiations sur les composants électroniques}
 % Inclure un fichier séparé pour chaque chapitre
 % \input{chapitre1}
 \input{Chap1/keskispass}
@@ -135,9 +145,23 @@
 % ----------------------------- %
 %        Chapitre 2              %
 % ----------------------------- %
-\chapter{Titre du Chapitre 2}
 % Inclure un fichier séparé pour chaque chapitre
 % \input{chapitre2}
+\chapter{Design d'un circuit intégré pour les conditions extrêmes}
+%spec aifira
+%supression diode antenna
+\input{Chap2/diode_antenna}
+\input{Chap2/laFDSOI}
+
+% ----------------------------- %
+%        Chapitre 3              %
+% ----------------------------- %
+\chapter{Fabrication et tests des circuits intégrés robuste aux radiations}
+% Inclure un fichier séparé pour chaque chapitre
+
+\input{Chap3/run_janvier_2024}
+\input{Chap3/run_octobre_2024}
+
 
 % ----------------------------- %
 %       Conclusion               %

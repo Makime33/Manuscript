@@ -1,0 +1,130 @@
+
+\subsection{Diodes "gate antenna", motivations – impact – suppression}
+\subsubsection{Motivations}
+Le processus de fabrication des circuits intégrés contient des étapes de polissages après la dépose et lithographie de chaque niveau de métal.
+
+\begin{metsUneSource}
+  Les étapes de polissages sont des étapes à risque car en tournant, le matériel de polissage va arracher des charges électriques au circuit qui va alors être soumis à des tension et champs électriques plus ou moins intense.
+\end{metsUneSource}
+Les étapes de gravure au plasma des différents niveaux de métaux, sont susceptibles de charger électriquement les pistes du circuit.
+
+\begin{metsUneSource}
+Thin gate oxide damage due to plasma processing
+\end{metsUneSource}
+
+Ce phénomène est connu sous le nom d'\textit{antenna-effect} soit "effet antenne". Les tensions et champs électriques généré par l'effet antenne présentent un risque de décharge électrique à travers le circuit ce qui peut endommager le circuit de manière irréversible lors de sa construction.
+
+\begin{metsUneSource}
+Source 
+\end{metsUneSource}
+
+
+Une méthode régulièrement utilisée pour minimiser les risques de destruction du circuit par l'\textit{antenna-effect} consiste à mettre des diodes qui permettent d’évacuer les charges électrique dans un chemin guidé, les empêchant ainsi de passer par le circuit, le détériorant.
+\begin{metsUneSource}
+  Thin gate oxide damage due to plasma processing
+\end{metsUneSource}
+
+\begin{metsUneSource}
+Parles des grilles
+
+Calcul diode \textit{gate-antenna} cas FDSOI
+\end{metsUneSource}
+
+Les erreurs de \textit{gate-antenna} sont détectés par le DRC qui fait le calcul basé sur l'équation \ref*{eq:metalX2000}.
+
+\begin{equation}
+  S_{Metal_{X}} <2000 \times S_{R_{X} on insulator}+50 \times S_{R_X bulk}
+  \label{eq:metalX2000}
+\end{equation}
+
+Cette équation indique que la surface d'un metal donné  $S_{Metal_{X}}$ correspondant à un noeuds éléctrique ne doit pas dépasser 2000 fois la valeur de la sommes des surfaces de la couche active SOI $S_{R_{X} on insulator}$ et 50 fois celles surface des couches actives dans le substrat $S_{R_X bulk}$.
+
+\subsubsection{Couche active $R_{X}$ et erreurs de \textit{gate-antenna}}
+La couche active $R_{X}$ est la couche qui est déssiné lors du layout du circuit et qui permet de définir les zones "actives" du circuit. Ces zones correspondent aux emplacements des transistors et aux differents contact entre le niveau de métal le plus bas $M_1$ et le silicium. Elles indique au fondeur de doper le silicium à de plus forte concentration en trous ou en electron suivant si le silicium est normalement N ou P. Ceci permet d'eliminer les diodes Shotckley entre les métaux et le silicium. Ce processus est résumé brièvement dans la figure %\ref*{fig:process fdsoi}.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.7\textwidth]{figures/FabSOI-MiddleEND-2.pdf}
+  \caption{Processus de fabrication d'un circuit en technologie FD-SOI: les isolants, les puits et les grilles sont déjà créés}
+  \label{fig:process fdsoi 2}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.7\textwidth]{figures/FabSOI-MiddleEND-3.5.pdf}
+  \caption{Implatation des dopants de surface au niveau des zones actives, la couche $R_X$ n'est pas physique mais donne juste une indication. Les dimensions réelles ne permettent pas de doper d'un coté puis de l'autre de la grille.}
+  \label{fig:process fdsoi 3}
+\end{figure}
+
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.7\textwidth]{figures/FabSOI-MiddleEND-4.pdf}
+  \caption{La surface du silicium est plus dopée que dans la profondeur du substrat, le Poly Silicium, masquant l'implantation au niveau du canal, permet de concerver un canal "\textit{Fully Depleted}"}
+  \label{fig:process fdsoi 4}
+\end{figure}
+
+\subsubsection{Impact}
+En règle générale, les diodes \textit{gate-antenna} ont un impact réduit sur les performances des circuits, augmentant simplement les capacité parasites des (normalement déjà élevé car beaucoup de métal) nœuds auxquels elles sont connectées. Dans le cadre d’un circuit destiné aux environnements radiatifs, les diodes \textit{gate-antenna} ont un impact bien plus important. En effet, au même titre que les autres jonctions PN, les diodes \textit{gate-antenna}, soumises à des radiations vont générer des courants parasites. De plus, contrairement aux diodes des \textit{Back-Gates} dont les courants parasites peuvent éventuellement être évacués par les alimentations \textcolor{red}{(cf. §III.A)}, il peut être nécessaire de mettre des diodes \textit{gate-antenna} n’importe où et notamment à des parties du circuit qui ne peuvent pas être régulé par une alimentions qui imposerait sa tension, compensant le courant parasite.
+\begin{metsUneSource}
+  Schéma Vref avec diode et du courant
+\end{metsUneSource}
+
+Dans cette étude, les règles de dessin nous imposent de mettre une diode \textit{gate-antenna} en sortie du circuit. En respectant cette règle, on s’assure d’avoir des performances médiocres face aux radiations, le courants parasite étant directement envoyé dans le circuit, perturbant sont point de fonctionnement et dans la sortie, modifiant la valeur de la référence de tension. Déroger à cette règle, c’est prendre le risque d’une destruction du circuit lors de sa fabrication.
+
+\subsubsection{Suppression}
+Différentes techniques existent pour se passer des diodes \textit{gate-antenna} mais sans qu’aucune ne soit parfaite :
+\paragraph{Reduction du rapport des surfaces métal/grille}
+Les diodes \textit{gate-antenna} n’étant nécessaire que dans le cas où la surface de métal connecté à une grille de transistor est trop importante, la première idée est de réduire au minimum la surface de métal connecté. L’inconvenant de cette technique est qu’elle élimine la possibilité de mettre du mesh. En effet le mesh consiste à mettre de grande quantité de métaux sur le circuit dans le but de former des capacités qui viendront lisser les tensions du circuit et limiter les risques d’oscillations et perturbations.
+
+\begin{metsUneSource}
+Photo plot
+\end{metsUneSource}
+
+Aussi, comme ce le cas dans notre étude, la surface des plots permettant l’accès au circuit par l’extérieur, en Wire-Bonding ou sous pointes, peut déjà dépasser la surface maximale accepté par les règles de dessin pour ne pas nécessiter de diode \textit{gate-antenna}. La taille et la densité du plot ne pouvant pas être diminuer sous peine de ne pas pouvoir connecter le circuit.
+
+A l'inverse, il est également possible de diminuer le rapport des surfaces métal/grille en augmentant la taille des grilles, soit en utilisant des transistors plus gros, ce qui demande un redimensionnement du circuit, soit en ajoutant des \textit{dummies}, qui est généralement obligatoire pour l'appariement des transistors.
+Dans le cas de l'ajout de \textit{dummies}, comme expliqué dans la partie : \textcolor{red}{III.B.1)} Motivations, la technologie 28nm FDSOI permet d'ajouter des \textit{dummies} sans augmenter la taille finale des diodes \textit{gate-antenna}.
+
+\begin{metsUneSource}
+Explication rx
+\end{metsUneSource}
+
+
+\paragraph{Bridging}
+Le calcul des surfaces métalliques qui entre en compte dans le calcul des surfaces des diodes \textit{gate-antenna} est fait pour chaque couche de métal, une gestion judicieuse des niveaux de métaux permet de modifier les surfaces entrant en jeu afin de se passer des diodes. 
+En effet, la technique dite de bridging permet de réduire la surface de métal connecté électriquement à la grille de transistor concernée, elle consiste à relier deux morceaux de piste d'un métal d'un niveau \textbf{n} par le métal de niveau \textbf{n+1} comme présenté en 
+
+\begin{metsUneSource}
+  Fig. 1 .Source bridging
+\end{metsUneSource}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.7\textwidth,keepaspectratio]{figures/BridgingBon.pdf}
+  \caption{Exemple de bridging entre deux pistes de métal, le métal M3 est bridgé par le métal M4.}
+  \label{fig:Bridging}
+\end{figure}
+
+Ainsi, lors de la gravure du métal de niveau \textbf{n}, sa surface est limitée, les problèmes de \textit{gate-antenna} disparaissent.
+La taille des plots de connexion, comme dans le paragraphe précèdent, peut tout de même venir annuler les effets du bridging.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.7\textwidth,,keepaspectratio]{figures/BridgingPAD.pdf}
+  \caption{Bridging de M3 par M4 connecté à un plot.}
+  \label{fig:BridgingPlot}
+\end{figure}
+
+
+\paragraph{Dérogation auprès du fondeur}
+La solution ultime, quand aucune autre solution n’a permis de se passer des diodes \textit{gate-antenna} est de demander, au fondeur, une dérogation sur l’erreur de dessin impliquant les diodes \textit{gate-antenna}. Cette solution est très risquée car le fondeur se libère de toute responsabilité quant à la bonne fabrication du circuit, qu’il est très difficile de prouver que le circuit ait été détruit par des ESD et qu’il serait osé de proposer une technique si hasardeuse sur une production à grande échelle, le nombre de circuit défectueux dès la sortie d’usine serait alors trop nombreux.
+
+\subsubsection{Drainage des courants parasites}
+\label{sec:drainage}
+
+Afin de réduire l'impact des courants générés par les jonctions PN des \textit{Back-Gates}, un solution est de drainer ces courants vers l'alimentation et la masse du circuit qui sont théoriquement des points de tension fixe. Cette solution est présentée dans la figure \textcolor{red}{ ref*{fig:drainage}.}
+
+\begin{metsUneSource}
+fig drainage
+\end{metsUneSource}

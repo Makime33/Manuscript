@@ -1,0 +1,94 @@
+\subsection{Buphagus}
+\begin{metsUneSource}
+Schéma
+perfomances
+AVIC
+layout
+PCB
+radiation LP2iB
+
+\begin{metsUneSource}
+    %equation of the temperature dependency in ppm/°C
+    \begin{equation}
+        V_{th}(T) = \alpha(T - T_0) + V_{th0}
+        \label{VtEnFonctionDeT}
+    \end{equation}
+
+CTAT PTAT
+
+\end{metsUneSource}
+%equation of the temperature dependency in ppm/°C
+\begin{equation}
+    V_{th}(T) = \alpha(T - T_0) + V_{th0}
+    \label{VtEnFonctionDeT}
+\end{equation}
+
+
+\end{metsUneSource}
+
+\subsection{Création d'un référence de tension}
+
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.4\textwidth]{../Circuits/RunJanvier2024/Vref50mV.pdf}
+    \caption{Shéma de la référence de tension}
+    \label{fig:schBuphagus}
+\end{figure}
+
+
+
+
+\subsection{Banc de mesure}
+
+
+
+\subsubsection{Circuit imprimé}
+
+Patron radiation LP2iB
+\begin{figure}
+    \centering
+    \includegraphics[width=0.7\textwidth]{../ProjetConditionsExtremes/RapportRenouvellement/PDF/patronPCB.pdf}
+    \caption{Patron du circuit imprimé, ce partron est un calque de la platine utilisée quotidiennement au LP2I}
+    \label{fig:patron_PCB_Buphagus}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.7\textwidth]{../Circuits/PCB_RunJanv2024/3D_PCB_chip.png}
+    \caption{Circuit imprimé chargé d'acceuillir le circuit intégré packagé}
+    \label{fig:PCB_Buphagus}
+\end{figure}
+
+Socket DIL 24 et protection ESD (Electro Static Discharge) faite d'une capacité et d'une résistance.
+\begin{metsUneSource}
+valeur capacité
+\end{metsUneSource}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.7\textwidth]{../ProjetConditionsExtremes/RapportRenouvellement/PDF/protectionESDsurPCB.pdf}
+    \caption{Protection ESD sur le circuit imprimé}
+    \label{fig:protection_ESD_sur_PCB} 
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.7\textwidth]{../Circuits/PCB_RunJanv2024/3D_PCB_alims.png}
+    \caption{PCB de gestion de l'alimentation}
+    \label{fig:PCB_alimsBuphagus}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.7\textwidth]{../ProjetConditionsExtremes/RapportRenouvellement/PDF/WireBonding_Impala_DIL_24.pdf}
+    \caption{Wire Bonding de la puce dans le boitier DIL 24}
+    \label{fig:WB_Buphagus}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.7\textwidth]{../ProjetConditionsExtremes/RapportRenouvellement/PNG/PhotoDIL24Buphagus/IMG_0691.JPG}
+    \caption{Puce wire bondé dans le boitier DIL 24, le capot du DIL 24 est enlevé}
+    \label{fig:puce_Buphagus_noLid}
+\end{figure}
