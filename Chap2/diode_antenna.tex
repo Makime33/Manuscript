@@ -1,7 +1,13 @@
 
-\subsection{Diodes "gate antenna", motivations – impact – suppression}
-\subsubsection{Motivations}
-Le processus de fabrication des circuits intégrés contient des étapes de polissages après la dépose et lithographie de chaque niveau de métal.
+\section{Diodes \textit{"gate antenna"} , Origine – Impact – Suppression}
+
+Comme expliqué dans la partie \textcolor{red}{tutu}, les jonctions PN, lorsque qu'elles sont soumisent à des radiations, sont des sources de courants parasites qui peuvent perturber le fonctionnement du circuit. Une manière de limiter ces courants est de limiter le nombre de jonction PN dans le circuit. Malheureusement, certaines jonctions PN sont imposée par le fondeur, c'est notament le cades des diodes dite de \textit{gate-antenna}.
+
+\subsection{Origine}
+\begin{metsUneSource}
+  Le processus de fabrication des circuits intégrés contient des étapes de polissages après la dépose et lithographie de chaque niveau de métal.
+\end{metsUneSource}
+
 
 \begin{metsUneSource}
   Les étapes de polissages sont des étapes à risque car en tournant, le matériel de polissage va arracher des charges électriques au circuit qui va alors être soumis à des tension et champs électriques plus ou moins intense.
@@ -39,7 +45,7 @@ Les erreurs de \textit{gate-antenna} sont détectés par le DRC qui fait le calc
 
 Cette équation indique que la surface d'un metal donné  $S_{Metal_{X}}$ correspondant à un noeuds éléctrique ne doit pas dépasser 2000 fois la valeur de la sommes des surfaces de la couche active SOI $S_{R_{X} on insulator}$ et 50 fois celles surface des couches actives dans le substrat $S_{R_X bulk}$.
 
-\subsubsection{Couche active $R_{X}$ et erreurs de \textit{gate-antenna}}
+\subsection{Couche active $R_{X}$ et erreurs de \textit{gate-antenna}}
 La couche active $R_{X}$ est la couche qui est déssiné lors du layout du circuit et qui permet de définir les zones "actives" du circuit. Ces zones correspondent aux emplacements des transistors et aux differents contact entre le niveau de métal le plus bas $M_1$ et le silicium. Elles indique au fondeur de doper le silicium à de plus forte concentration en trous ou en electron suivant si le silicium est normalement N ou P. Ceci permet d'eliminer les diodes Shotckley entre les métaux et le silicium. Ce processus est résumé brièvement dans la figure %\ref*{fig:process fdsoi}.
 
 \begin{figure}[H]
@@ -64,7 +70,7 @@ La couche active $R_{X}$ est la couche qui est déssiné lors du layout du circu
   \label{fig:process fdsoi 4}
 \end{figure}
 
-\subsubsection{Impact}
+\subsection{Impact}
 En règle générale, les diodes \textit{gate-antenna} ont un impact réduit sur les performances des circuits, augmentant simplement les capacité parasites des (normalement déjà élevé car beaucoup de métal) nœuds auxquels elles sont connectées. Dans le cadre d’un circuit destiné aux environnements radiatifs, les diodes \textit{gate-antenna} ont un impact bien plus important. En effet, au même titre que les autres jonctions PN, les diodes \textit{gate-antenna}, soumises à des radiations vont générer des courants parasites. De plus, contrairement aux diodes des \textit{Back-Gates} dont les courants parasites peuvent éventuellement être évacués par les alimentations \textcolor{red}{(cf. §III.A)}, il peut être nécessaire de mettre des diodes \textit{gate-antenna} n’importe où et notamment à des parties du circuit qui ne peuvent pas être régulé par une alimentions qui imposerait sa tension, compensant le courant parasite.
 \begin{metsUneSource}
   Schéma Vref avec diode et du courant
@@ -72,7 +78,7 @@ En règle générale, les diodes \textit{gate-antenna} ont un impact réduit sur
 
 Dans cette étude, les règles de dessin nous imposent de mettre une diode \textit{gate-antenna} en sortie du circuit. En respectant cette règle, on s’assure d’avoir des performances médiocres face aux radiations, le courants parasite étant directement envoyé dans le circuit, perturbant sont point de fonctionnement et dans la sortie, modifiant la valeur de la référence de tension. Déroger à cette règle, c’est prendre le risque d’une destruction du circuit lors de sa fabrication.
 
-\subsubsection{Suppression}
+\subsection{Suppression}
 Différentes techniques existent pour se passer des diodes \textit{gate-antenna} mais sans qu’aucune ne soit parfaite :
 \paragraph{Reduction du rapport des surfaces métal/grille}
 Les diodes \textit{gate-antenna} n’étant nécessaire que dans le cas où la surface de métal connecté à une grille de transistor est trop importante, la première idée est de réduire au minimum la surface de métal connecté. L’inconvenant de cette technique est qu’elle élimine la possibilité de mettre du mesh. En effet le mesh consiste à mettre de grande quantité de métaux sur le circuit dans le but de former des capacités qui viendront lisser les tensions du circuit et limiter les risques d’oscillations et perturbations.
@@ -120,7 +126,7 @@ La taille des plots de connexion, comme dans le paragraphe précèdent, peut tou
 \paragraph{Dérogation auprès du fondeur}
 La solution ultime, quand aucune autre solution n’a permis de se passer des diodes \textit{gate-antenna} est de demander, au fondeur, une dérogation sur l’erreur de dessin impliquant les diodes \textit{gate-antenna}. Cette solution est très risquée car le fondeur se libère de toute responsabilité quant à la bonne fabrication du circuit, qu’il est très difficile de prouver que le circuit ait été détruit par des ESD et qu’il serait osé de proposer une technique si hasardeuse sur une production à grande échelle, le nombre de circuit défectueux dès la sortie d’usine serait alors trop nombreux.
 
-\subsubsection{Drainage des courants parasites}
+\subsection{Drainage des courants parasites}
 \label{sec:drainage}
 
 Afin de réduire l'impact des courants générés par les jonctions PN des \textit{Back-Gates}, un solution est de drainer ces courants vers l'alimentation et la masse du circuit qui sont théoriquement des points de tension fixe. Cette solution est présentée dans la figure \textcolor{red}{ ref*{fig:drainage}.}

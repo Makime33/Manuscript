@@ -1,31 +1,31 @@
 \contentsline {chapter}{Remerciements}{1}{chapter*.1}%
-\contentsline {chapter}{\numberline {1}Effet des radiations sur les composants électroniques}{4}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Introduction}{6}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Effet des radiations sur les circuits electroniques}{6}{section.1.2}%
-\contentsline {subsection}{\numberline {1.2.1}Dose}{7}{subsection.1.2.1}%
-\contentsline {subsection}{\numberline {1.2.2}Débit de dose}{8}{subsection.1.2.2}%
-\contentsline {subsubsection}{\numberline {1.2.2.1} Valeurs de débit}{8}{subsubsection.1.2.2.1}%
-\contentsline {subsection}{\numberline {1.2.3} Considération du bon mode de dégradation}{8}{subsection.1.2.3}%
-\contentsline {section}{\numberline {1.3}Développement d’un circuit robuste aux radiations}{9}{section.1.3}%
-\contentsline {subsection}{\numberline {1.3.1}Choix d’une technologie polyvalente avec des ambitions de robustesse face aux raditions}{9}{subsection.1.3.1}%
-\contentsline {subsection}{\numberline {1.3.2}Référence de tension}{11}{subsection.1.3.2}%
-\contentsline {subsection}{\numberline {1.3.3}Amplificateur opérationnel}{11}{subsection.1.3.3}%
-\contentsline {chapter}{\numberline {2}Design d'un circuit intégré pour les conditions extrêmes}{12}{chapter.2}%
-\contentsline {subsection}{\numberline {2.0.1}Diodes "gate antenna", motivations – impact – suppression}{12}{subsection.2.0.1}%
-\contentsline {subsubsection}{\numberline {2.0.1.1}Motivations}{12}{subsubsection.2.0.1.1}%
-\contentsline {subsubsection}{\numberline {2.0.1.2}Couche active $R_{X}$ et erreurs de \textit {gate-antenna}}{13}{subsubsection.2.0.1.2}%
-\contentsline {subsubsection}{\numberline {2.0.1.3}Impact}{14}{subsubsection.2.0.1.3}%
-\contentsline {subsubsection}{\numberline {2.0.1.4}Suppression}{15}{subsubsection.2.0.1.4}%
-\contentsline {paragraph}{\numberline {2.0.1.4.1}Reduction du rapport des surfaces métal/grille}{15}{paragraph.2.0.1.4.1}%
-\contentsline {paragraph}{\numberline {2.0.1.4.2}Bridging}{16}{paragraph.2.0.1.4.2}%
-\contentsline {paragraph}{\numberline {2.0.1.4.3}Dérogation auprès du fondeur}{16}{paragraph.2.0.1.4.3}%
-\contentsline {subsubsection}{\numberline {2.0.1.5}Drainage des courants parasites}{17}{subsubsection.2.0.1.5}%
-\contentsline {subsection}{\numberline {2.0.2}Technologie 28nm FDSOI}{17}{subsection.2.0.2}%
-\contentsline {subsubsection}{\numberline {2.0.2.1}Influence de la Back-Gate}{17}{subsubsection.2.0.2.1}%
-\contentsline {chapter}{\numberline {3}Fabrication et tests des circuits intégrés robuste aux radiations}{20}{chapter.3}%
-\contentsline {subsection}{\numberline {3.0.1}Buphagus}{20}{subsection.3.0.1}%
-\contentsline {subsection}{\numberline {3.0.2}Création d'un référence de tension}{20}{subsection.3.0.2}%
-\contentsline {subsection}{\numberline {3.0.3}Banc de mesure}{20}{subsection.3.0.3}%
-\contentsline {subsubsection}{\numberline {3.0.3.1}Circuit imprimé}{20}{subsubsection.3.0.3.1}%
-\contentsline {subsection}{\numberline {3.0.4}Inshallah}{25}{subsection.3.0.4}%
+\contentsline {chapter}{\numberline {1}Effet des radiations sur les composants électroniques}{5}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Introduction}{7}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Effet des radiations sur les circuits electroniques}{7}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Dose}{8}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Débit de dose}{9}{subsection.1.2.2}%
+\contentsline {subsubsection}{\numberline {1.2.2.1} Valeurs de débit}{9}{subsubsection.1.2.2.1}%
+\contentsline {subsection}{\numberline {1.2.3} Considération du bon mode de dégradation}{9}{subsection.1.2.3}%
+\contentsline {section}{\numberline {1.3}Développement d’un circuit robuste aux radiations}{10}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}Choix d’une technologie polyvalente avec des ambitions de robustesse face aux raditions}{10}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.2}Référence de tension}{12}{subsection.1.3.2}%
+\contentsline {subsection}{\numberline {1.3.3}Amplificateur opérationnel}{12}{subsection.1.3.3}%
+\contentsline {chapter}{\numberline {2}Design d'un circuit intégré pour les conditions extrêmes}{13}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Diodes \textit {"gate antenna"} , Origine – Impact – Suppression}{13}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Origine}{13}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Couche active $R_{X}$ et erreurs de \textit {gate-antenna}}{14}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.3}Impact}{16}{subsection.2.1.3}%
+\contentsline {subsection}{\numberline {2.1.4}Suppression}{17}{subsection.2.1.4}%
+\contentsline {paragraph}{\numberline {2.1.4.0.1}Reduction du rapport des surfaces métal/grille}{17}{paragraph.2.1.4.0.1}%
+\contentsline {paragraph}{\numberline {2.1.4.0.2}Bridging}{17}{paragraph.2.1.4.0.2}%
+\contentsline {paragraph}{\numberline {2.1.4.0.3}Dérogation auprès du fondeur}{18}{paragraph.2.1.4.0.3}%
+\contentsline {subsection}{\numberline {2.1.5}Drainage des courants parasites}{18}{subsection.2.1.5}%
+\contentsline {subsection}{\numberline {2.1.6}Technologie 28nm FDSOI}{19}{subsection.2.1.6}%
+\contentsline {subsubsection}{\numberline {2.1.6.1}Influence de la Back-Gate}{20}{subsubsection.2.1.6.1}%
+\contentsline {chapter}{\numberline {3}Fabrication et tests des circuits intégrés robuste aux radiations}{21}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Buphagus}{21}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Création d'un référence de tension}{21}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Banc de mesure}{21}{subsection.3.1.2}%
+\contentsline {subsubsection}{\numberline {3.1.2.1}Circuit imprimé}{21}{subsubsection.3.1.2.1}%
+\contentsline {subsection}{\numberline {3.1.3}Inshallah}{21}{subsection.3.1.3}%
 \contentsline {chapter}{\numberline {4}Conclusion}{28}{chapter.4}%

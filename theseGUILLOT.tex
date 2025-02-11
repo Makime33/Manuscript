@@ -1,4 +1,14 @@
-\documentclass[12pt,a4paper]{report}
+%\documentclass[12pt,a4paper]{report}
+
+
+%&pdflatex
+\pdfobjcompresslevel 0 % Ligne souvent nécessaire pour la validité du PDF généré
+\documentclass[french,12pt,a4paper]{report}
+\usepackage[top=1.5cm,bottom=2cm,left=2.5cm,right=2.5cm,includehead]{geometry}
+\usepackage[T1]{fontenc}% pour la sortie
+\usepackage[utf8]{inputenc} % pour l'entrée
+\usepackage{graphicx}
+\usepackage{setspace}
 
 % #region Packages
 \renewcommand{\rmdefault}{phv}	% Utilise la police Arial pour le texte
@@ -87,20 +97,15 @@
 
 \newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Une ligne horizontale de la largeur de la page
 
-
-
-
-
-
-
-
 \begin{document}
+
 % ----------------------------- %
 %          Document principal    %
 % ----------------------------- %
 
 % Inclusion de la première de couverture
 \input{couverture}
+%\input{page_garde}
 
 
 
